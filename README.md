@@ -7,7 +7,7 @@ Data Engineer
 
 こんにちは、お元気ですか？
 
-* 🌍  I'm based in Fanpage DSC HCMUTE và Đoàn hội Khoa CNTT HCMUTE
+* 🌍  I'm based in HCMUTE RTIC
 * ✉️  You can contact me at [quocanh0815@gmail.com](mailto:quocanh0815@gmail.com)
 * 🧠  I'm learning Data Engineering
 

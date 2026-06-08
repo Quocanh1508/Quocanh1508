@@ -58,18 +58,27 @@ I am a **Data Engineering student** passionate about building data systems and f
 ## GitHub Analytics
 
 <div align="center">
-  <a href="https://github.com/Quocanh1508">
-    <img height="195" align="center" src="https://github-readme-stats.vercel.app/api?username=Quocanh1508&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" />
-  </a>
-  <a href="https://github.com/Quocanh1508">
-    <img height="195" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Quocanh1508&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&langs_count=8&card_width=320" />
-  </a>
+
+  <!-- GitHub Streak Stats (stable service) -->
+  <img src="https://streak-stats.demolab.com/?user=Quocanh1508&theme=dark&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" alt="GitHub Streak" />
+
+  <br/><br/>
+
+  <!-- Profile Summary Card -->
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Quocanh1508&theme=github_dark" alt="Profile Summary" />
+
+  <br/>
+
+  <!-- Top Languages Card -->
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Quocanh1508&theme=github_dark" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Quocanh1508&theme=github_dark" alt="Most Used Languages" />
+
 </div>
 
 <br/>
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Quocanh1508&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
-  <br/>
-  <i>"Build things that matter. Ship things that work."</i>
+  <br/><br/>
+  <i>塵も積もれば山となる — Even dust piled up becomes a mountain.</i>
 </div>

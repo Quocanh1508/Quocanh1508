@@ -84,5 +84,5 @@ I am a **Data Engineering student** passionate about building data systems and f
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Quocanh1508&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
   <br/><br/>
-  <i>塵 mo 積もれば山となる — Even dust piled up becomes a mountain.</i>
+  <i>塵も積もれば山となる — Even dust piled up becomes a mountain.</i>
 </div>

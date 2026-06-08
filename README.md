@@ -1,6 +1,8 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0a0a2e&height=200&section=header&text=Nguyen%20Dang%20Quoc%20Anh&fontSize=55&fontColor=ffffff&desc=Data%20Engineering%20Student%20%7C%20Intern%20Data%20Engineer&descSize=18&descAlignY=65" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0a0a2e&height=200&section=header&text=Nguyen%20Dang%20Quoc%20Anh&fontSize=55&fontColor=ffffff&desc=Data%20Engineering%20Student%20%7C%20Intern%20Data%20Engineer&descSize=18&fontAlignY=40&descAlignY=72" />
 </div>
+
+<br/>
 
 <div align="center">
   <a href="mailto:quocanh0815@gmail.com">

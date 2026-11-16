@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
 <title id="t">Black Shores at night</title>
-<desc id="d">A night sea under drifting stars, with glowing butterflies rising over the tide.</desc>
+<desc id="d">A night sea under twinkling stars and a glowing moon, with butterflies rising over the tide.</desc>
 <defs>
   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#050914"/><stop offset=".62" stop-color="#0a1022"/><stop offset="1" stop-color="#12264a"/>
@@ -8,46 +8,107 @@
   <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#1b3a66" stop-opacity=".9"/><stop offset="1" stop-color="#050914"/>
   </linearGradient>
-  <radialGradient id="moon" cx=".5" cy=".5" r=".5">
-    <stop offset="0" stop-color="#eaf4ff"/><stop offset=".45" stop-color="#a8e6f5" stop-opacity=".55"/><stop offset="1" stop-color="#a8e6f5" stop-opacity="0"/>
+  <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#eaf4ff"/><stop offset=".45" stop-color="#a8e6f5" stop-opacity=".5"/><stop offset="1" stop-color="#a8e6f5" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="glow" cx=".5" cy=".5" r=".5">
     <stop offset="0" stop-color="#a8e6f5" stop-opacity=".9"/><stop offset="1" stop-color="#a8e6f5" stop-opacity="0"/>
   </radialGradient>
-  <symbol id="fly" viewBox="-12 -10 24 20">
-    <path d="M0,0 C-4,-9 -12,-9 -10,-2 C-9,2 -4,2 0,0 Z M0,0 C4,-9 12,-9 10,-2 C9,2 4,2 0,0 Z M0,0 C-3,3 -8,8 -5,9 C-2,9 -1,4 0,0 Z M0,0 C3,3 8,8 5,9 C2,9 1,4 0,0 Z" fill="#a8e6f5"/>
-  </symbol>
-  <style>
-    .star { fill: #eaf4ff; animation: twinkle 3.2s ease-in-out infinite; }
-    .fly { animation: rise 9s ease-in-out infinite; }
-    .wave { animation: drift 7s ease-in-out infinite alternate; }
-    .title { font: 600 40px 'Segoe UI', system-ui, sans-serif; fill: #eaf4ff; letter-spacing: 6px; }
-    .sub { font: 14px 'Fira Code', ui-monospace, monospace; fill: #7f93b8; letter-spacing: 3px; }
-    @keyframes twinkle { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
-    @keyframes rise { 0% { transform: translate(0, 40px); opacity: 0; } 20% { opacity: .9; } 80% { opacity: .9; } 100% { transform: translate(30px, -160px); opacity: 0; } }
-    @keyframes drift { from { transform: translateX(-30px); } to { transform: translateX(30px); } }
-    @media (prefers-reduced-motion: reduce) { .star, .fly, .wave { animation: none; } .fly { opacity: .7; } }
-  </style>
+  <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#eaf4ff" stop-opacity="0"/><stop offset="1" stop-color="#eaf4ff"/>
+  </linearGradient>
+  <filter id="textglow" x="-10%" y="-50%" width="120%" height="200%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="b"/>
+    <feFlood flood-color="#5fb3d9" flood-opacity=".55"/><feComposite in2="b" operator="in"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <!-- One butterfly centred on 0,0; the wings flap by squashing horizontally. -->
+  <g id="fly">
+    <circle r="16" fill="url(#glow)"/>
+    <g>
+      <path d="M0,0 C-4,-9 -12,-9 -10,-2 C-9,2 -4,2 0,0 Z M0,0 C4,-9 12,-9 10,-2 C9,2 4,2 0,0 Z M0,0 C-3,3 -8,8 -5,9 C-2,9 -1,4 0,0 Z M0,0 C3,3 8,8 5,9 C2,9 1,4 0,0 Z" fill="#a8e6f5"/>
+      <animateTransform attributeName="transform" type="scale" values="1 1;.25 1;1 1" dur=".45s" repeatCount="indefinite"/>
+    </g>
+  </g>
 </defs>
+
 <rect width="1200" height="260" fill="url(#sky)"/>
-<circle cx="980" cy="70" r="70" fill="url(#moon)"/>
-<circle cx="980" cy="70" r="20" fill="#eaf4ff" opacity=".9"/>
-<g>
-  <circle class="star" cx="60" cy="40" r="1.4"/><circle class="star" cx="140" cy="95" r="1" style="animation-delay:.6s"/>
-  <circle class="star" cx="230" cy="30" r="1.6" style="animation-delay:1.2s"/><circle class="star" cx="320" cy="120" r="1" style="animation-delay:2s"/>
-  <circle class="star" cx="410" cy="55" r="1.3" style="animation-delay:.3s"/><circle class="star" cx="500" cy="20" r="1" style="animation-delay:1.7s"/>
-  <circle class="star" cx="590" cy="105" r="1.5" style="animation-delay:2.4s"/><circle class="star" cx="680" cy="40" r="1" style="animation-delay:.9s"/>
-  <circle class="star" cx="760" cy="135" r="1.2" style="animation-delay:1.4s"/><circle class="star" cx="850" cy="25" r="1.6" style="animation-delay:2.8s"/>
-  <circle class="star" cx="1090" cy="140" r="1" style="animation-delay:.5s"/><circle class="star" cx="1150" cy="45" r="1.4" style="animation-delay:1.9s"/>
-  <circle class="star" cx="890" cy="160" r="1" style="animation-delay:2.2s"/><circle class="star" cx="1040" cy="190" r="1.1" style="animation-delay:1s"/>
+
+<!-- stars -->
+<g fill="#eaf4ff">
+  <circle cx="60" cy="40" r="1.4"><animate attributeName="opacity" values=".2;1;.2" dur="3.2s" repeatCount="indefinite"/></circle>
+  <circle cx="140" cy="95" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.6s" begin="-.6s" repeatCount="indefinite"/></circle>
+  <circle cx="230" cy="30" r="1.6"><animate attributeName="opacity" values=".2;1;.2" dur="3.8s" begin="-1.2s" repeatCount="indefinite"/></circle>
+  <circle cx="320" cy="120" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.9s" begin="-2s" repeatCount="indefinite"/></circle>
+  <circle cx="410" cy="55" r="1.3"><animate attributeName="opacity" values=".2;1;.2" dur="3.4s" begin="-.3s" repeatCount="indefinite"/></circle>
+  <circle cx="500" cy="20" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.4s" begin="-1.7s" repeatCount="indefinite"/></circle>
+  <circle cx="590" cy="185" r="1.2"><animate attributeName="opacity" values=".2;1;.2" dur="3.1s" begin="-2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="680" cy="40" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.7s" begin="-.9s" repeatCount="indefinite"/></circle>
+  <circle cx="760" cy="180" r="1.2"><animate attributeName="opacity" values=".2;1;.2" dur="3.6s" begin="-1.4s" repeatCount="indefinite"/></circle>
+  <circle cx="850" cy="25" r="1.6"><animate attributeName="opacity" values=".2;1;.2" dur="3s" begin="-2.8s" repeatCount="indefinite"/></circle>
+  <circle cx="1180" cy="140" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.5s" begin="-.5s" repeatCount="indefinite"/></circle>
+  <circle cx="1010" cy="35" r="1.4"><animate attributeName="opacity" values=".2;1;.2" dur="3.3s" begin="-1.9s" repeatCount="indefinite"/></circle>
+  <circle cx="890" cy="160" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.8s" begin="-2.2s" repeatCount="indefinite"/></circle>
+  <circle cx="1040" cy="185" r="1.1"><animate attributeName="opacity" values=".2;1;.2" dur="3.5s" begin="-1s" repeatCount="indefinite"/></circle>
+  <circle cx="110" cy="160" r="1.1"><animate attributeName="opacity" values=".2;1;.2" dur="3s" begin="-1.5s" repeatCount="indefinite"/></circle>
 </g>
+
+<!-- shooting star, once every 7 s -->
+<g opacity="0">
+  <line x1="0" y1="0" x2="90" y2="0" stroke="url(#streak)" stroke-width="2" stroke-linecap="round" transform="rotate(160)"/>
+  <animateMotion path="M800,25 L580,105" dur="7s" keyPoints="0;0;1;1" keyTimes="0;.7;.82;1" calcMode="linear" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.7;.74;.82;1" dur="7s" repeatCount="indefinite"/>
+</g>
+
+<!-- moon with breathing halo -->
+<circle cx="1100" cy="66" r="70" fill="url(#halo)">
+  <animate attributeName="r" values="64;78;64" dur="6s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".75;1;.75" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1100" cy="66" r="20" fill="#eaf4ff" opacity=".92"/>
+
+<!-- sea -->
 <path d="M0,200 Q150,185 300,200 T600,200 T900,200 T1200,200 V260 H0 Z" fill="url(#sea)"/>
-<path class="wave" d="M-60,208 Q90,196 240,208 T540,208 T840,208 T1140,208 T1440,208" fill="none" stroke="#5fb3d9" stroke-opacity=".5" stroke-width="1.5"/>
-<path class="wave" d="M-60,226 Q90,216 240,226 T540,226 T840,226 T1140,226 T1440,226" fill="none" stroke="#2f6a9a" stroke-opacity=".6" stroke-width="1.2" style="animation-delay:-3s"/>
-<path d="M980,205 v50" stroke="#a8e6f5" stroke-opacity=".25" stroke-width="16" stroke-linecap="round"/>
-<g class="fly"><circle cx="170" cy="190" r="14" fill="url(#glow)"/><use href="#fly" x="158" y="180" width="24" height="20"/></g>
-<g class="fly" style="animation-delay:-3s"><circle cx="860" cy="200" r="12" fill="url(#glow)"/><use href="#fly" x="850" y="191" width="20" height="17"/></g>
-<g class="fly" style="animation-delay:-6s"><circle cx="1080" cy="195" r="10" fill="url(#glow)"/><use href="#fly" x="1072" y="188" width="16" height="14"/></g>
-<text x="600" y="118" text-anchor="middle" class="title">NGUYỄN ĐẶNG QUỐC ANH</text>
-<text x="600" y="152" text-anchor="middle" class="sub">FULL-STACK · IoT · DATA — WATCHING OVER THE TIDE</text>
+<path d="M-60,208 Q90,196 240,208 T540,208 T840,208 T1140,208 T1440,208" fill="none" stroke="#5fb3d9" stroke-opacity=".5" stroke-width="1.5">
+  <animateTransform attributeName="transform" type="translate" values="-30 0;30 0;-30 0" dur="9s" repeatCount="indefinite"/>
+</path>
+<path d="M-60,226 Q90,216 240,226 T540,226 T840,226 T1140,226 T1440,226" fill="none" stroke="#2f6a9a" stroke-opacity=".6" stroke-width="1.2">
+  <animateTransform attributeName="transform" type="translate" values="30 0;-30 0;30 0" dur="11s" repeatCount="indefinite"/>
+</path>
+
+<!-- shimmering moonlight on the water -->
+<g stroke="#a8e6f5" stroke-linecap="round">
+  <line x1="1078" y1="212" x2="1122" y2="212" stroke-width="2"><animate attributeName="opacity" values=".15;.6;.15" dur="2.2s" repeatCount="indefinite"/></line>
+  <line x1="1086" y1="222" x2="1114" y2="222" stroke-width="2"><animate attributeName="opacity" values=".5;.12;.5" dur="2.6s" repeatCount="indefinite"/></line>
+  <line x1="1070" y1="232" x2="1130" y2="232" stroke-width="1.6"><animate attributeName="opacity" values=".1;.45;.1" dur="3s" begin="-1s" repeatCount="indefinite"/></line>
+  <line x1="1092" y1="242" x2="1108" y2="242" stroke-width="1.6"><animate attributeName="opacity" values=".4;.1;.4" dur="2.4s" begin="-.5s" repeatCount="indefinite"/></line>
+</g>
+
+<!-- butterflies rising from the tide -->
+<g opacity="0">
+  <use href="#fly"/>
+  <animateMotion path="M170,235 C200,190 140,140 190,95 S230,30 210,0" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.15;.8;1" dur="10s" repeatCount="indefinite"/>
+</g>
+<g opacity="0">
+  <use href="#fly" transform="scale(.8)"/>
+  <animateMotion path="M860,240 C830,200 890,150 850,110 S820,40 860,0" dur="12s" begin="-4s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.15;.8;1" dur="12s" begin="-4s" repeatCount="indefinite"/>
+</g>
+<g opacity="0">
+  <use href="#fly" transform="scale(.65)"/>
+  <animateMotion path="M1010,238 C1040,200 980,160 1020,120 S1050,50 1030,0" dur="11s" begin="-8s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.15;.8;1" dur="11s" begin="-8s" repeatCount="indefinite"/>
+</g>
+<g opacity="0">
+  <use href="#fly" transform="scale(.7)"/>
+  <animateMotion path="M420,240 C450,205 400,165 440,125 S470,60 445,0" dur="13s" begin="-2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;.85;.85;0" keyTimes="0;.15;.8;1" dur="13s" begin="-2s" repeatCount="indefinite"/>
+</g>
+
+<!-- name -->
+<text x="600" y="122" text-anchor="middle" filter="url(#textglow)" fill="#eaf4ff"
+  font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="800" letter-spacing="7">NGUYEN DANG QUOC ANH</text>
+<text x="600" y="158" text-anchor="middle" fill="#a8e6f5" opacity=".85"
+  font-family="'Fira Code', Consolas, ui-monospace, monospace" font-size="15" font-weight="600" letter-spacing="4">FULL-STACK DEVELOPER · DATA ENGINEER</text>
 </svg>

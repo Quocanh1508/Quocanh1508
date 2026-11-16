@@ -111,19 +111,6 @@
 
 <br>
 
-<h3 align="center">✦ ＴＲＯＰＨＹ ／ ＣＡＢＩＮＥＴ ✦</h3>
-
-<div align="center">
-
-<table>
-  <tr><td></td><td><b>Big Data Certificate</b> · Samsung Innovation Campus (SIC)</td></tr>
-  <tr><td>🏅</td><td><b>Top 8</b> · Hackathon at HCMUTE</td></tr>
-</table>
-
-</div>
-
-<br>
-
 <h3 align="center">[ ／／ T E T H Y S _ D A T A B A N K ／／ ]</h3>
 
 <div align="center">

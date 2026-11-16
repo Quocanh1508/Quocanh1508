@@ -128,10 +128,13 @@
 <div align="center">
   <a href="mailto:quocanh0815@gmail.com"><img src="https://img.shields.io/badge/Gmail-0a1022?style=for-the-badge&logo=gmail&logoColor=a8e6f5" alt="Email" /></a>
   <a href="https://github.com/Quocanh1508"><img src="https://img.shields.io/badge/GitHub-0a1022?style=for-the-badge&logo=github&logoColor=eaf4ff" alt="GitHub" /></a>
+  <img src="https://img.shields.io/badge/WeChat-0a1022?style=for-the-badge&logo=wechat&logoColor=5fb3d9" alt="WeChat" title="WeChat ID: wxid_4mh9atsxko7c22" />
   <!-- TODO: bỏ comment khi có link
   <a href="https://YOUR-PORTFOLIO"><img src="https://img.shields.io/badge/Portfolio-0a1022?style=for-the-badge&logo=vercel&logoColor=5fb3d9" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/YOUR-ID"><img src="https://img.shields.io/badge/LinkedIn-0a1022?style=for-the-badge&logo=linkedin&logoColor=a8e6f5" alt="LinkedIn" /></a>
   -->
+  <br>
+  <sub>WeChat ID: <code>wxid_4mh9atsxko7c22</code></sub>
 </div>
 
 <br>

@@ -8,7 +8,7 @@
   <img src="https://raw.githubusercontent.com/Quocanh1508/Quocanh1508/main/assets/AVT.gif" width="320" alt="Shorekeeper on the night shore, hands clasped under the moonlight" />
 </a>
 
-# *— Keep the tide, ship the system —*
+# *— Welcome back. Back to the Black Shores —*
 
 <p align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2800&pause=900&color=A8E6F5&background=00000000&center=true&vCenter=true&width=560&lines=FullStack+Developer+%40+PureVita+%C2%B7+Truliva;IoT+firmware+collaborator+%C2%B7+Truliva+Quinyuan+Group;ESP32+%C2%B7+React+%C2%B7+Node.js+%C2%B7+PostgreSQL;Data+Engineering+%40+HCMUTE" alt="Typing: FullStack Developer at PureVita, IoT firmware collaborator at Truliva Quinyuan Group, ESP32 React Node.js PostgreSQL, Data Engineering at HCMUTE" /></p>
 

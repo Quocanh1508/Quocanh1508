@@ -14,7 +14,7 @@
 
 </div>
 
-> 🦋 **`[ Tethys ]`** :: A new Resonator signal has reached the Black Shores. You are reading the log of **Nguyễn Đặng Quốc Anh** — *full-stack developer* by day, *IoT firmware tinkerer* when the boards light up, *data engineer* when the tide of events rolls in. *Stay a while, the stars are listening…*
+> 🦋 **`[ Tethys ]`** :: Your past... I promised to keep it a secret, at your own request. That day, I realized our reunion would be one-sided. This is why your memory loss didn't surprise me... But it doesn't matter now. You may have forgotten me, but I will remember everything about you, always.*
 
 <br>
 
